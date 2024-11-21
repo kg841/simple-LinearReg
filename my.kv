@@ -1,0 +1,98 @@
+<MyGrid>:
+
+    x1 : x1
+    x2 : x2
+    x3 : x3
+    x4 : x4
+    x5 : x5
+    
+    y1 : y1
+    y2 : y2
+    y3 : y3
+    y4 : y4
+    y5 : y5
+
+    GridLayout:
+        cols:2
+        size: root.width - 200, root.height -200
+        pos: 100, 100
+
+        GridLayout:
+            cols:2
+            Label:
+                text: "x1: "
+
+            TextInput:
+                id: x1
+                multiline:False
+
+            Label:
+                text: "x2: "
+
+            TextInput:
+                id: x2
+                multiline:False
+
+            Label:
+                text: "x3: "
+
+            TextInput:
+                id: x3
+                multiline:False
+
+            Label:
+                text: "x4: "
+
+            TextInput:
+                id: x4
+                multiline:False
+
+            Label:
+                text: "x5: "
+
+            TextInput:
+                id: x5
+                multiline:False
+
+
+            Label:
+                text: "y1: "
+
+            TextInput:
+                id: y1
+                multiline:False
+
+            Label:
+                text: "y2: "
+
+            TextInput:
+                id: y2
+                multiline:False
+
+            Label:
+                text: "y3: "
+
+            TextInput:
+                id: y3
+                multiline:False
+
+            Label:
+                text: "y4: "
+
+            TextInput:
+                id: y4
+                multiline:False
+
+            Label:
+                text: "y5: "
+
+            TextInput:
+                id: y5
+                multiline:False
+                
+
+        
+
+        Button:
+            text:"Calculate"
+            on_press: root.btn()
