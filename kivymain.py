@@ -17,7 +17,7 @@ def grafik(x1,x2,x3,x4,x5 , y1,y2,y3,y4,y5):
     y = np.array([y1,y2,y3,y4,y5]).astype(np.float64)  # Y Values
 
 
-    # Doğrusal regresyon
+    # 
     A = np.vstack([x, np.ones(len(x))]).T  
     m, c = np.linalg.lstsq(A, y, rcond=None)[0]  # slope(m) and cut-off point(c)
 
